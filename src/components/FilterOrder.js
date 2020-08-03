@@ -16,6 +16,7 @@ function FilterOrder (props){
         </label>
         <div class="col-sm-10">
           <select onChange= {changeOrder} value= {props.order} class="form-select form-select-lg mb-3">
+            <option value="id">ID</option>  
             <option value="name">Name</option>
             <option value="OfficeLocation">Office Location</option>
             <option value="Role">Role</option>

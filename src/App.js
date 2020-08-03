@@ -7,9 +7,11 @@ import EmployeeList from "./components/EmployeeList"
 import employees from "./employees.json"
 
 function App() {
-  const [tableManager, setList] = useState( { list: employees, filter: "", order: "name" } )
+  const [tableManager, setList] = useState( { list: employees, filter: "", order: "id" } )
+  console.log( `[App] tableManager:`, tableManager )
 
   function updateFilter(filter){
+    console.log( `employees: `, employees )
     const filterList =  employees.filter( employee => employee.name.toLocaleLowerCase().indexOf(filter.toLocaleLowerCase())> -1)
     setList ({...tableManager, filter, list:filterList})
   }
@@ -31,10 +33,7 @@ function App() {
           <FilterOrder order={tableManager.filter} updateOrder={updateOrder} />
         </form>
 
-        <EmployeeList employees= {tableManager.list}/>
-
-        
-      
+        <EmployeeList employees= {tableManager.list}/>      
     </div>
 
 
@@ -42,6 +41,7 @@ function App() {
 
 
   );
+  
 }
 
 export default App;

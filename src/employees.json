@@ -2,8 +2,8 @@
     { 
         "id": 1,
         "name": "Mark Jacob",
-        "officeLocation":"Downtown TO",
-        "role": "UI UX Junior Designer"
+        "officeLocation":"Toronto",
+        "role": "Frontend"
 
 
 
@@ -12,7 +12,7 @@
         "id": 2,
         "name": "Jacob Daniel",
         "officeLocation":"Ottawa",
-        "role": "Front-End Developer"
+        "role": "Backend"
 
 
 
@@ -21,7 +21,7 @@
         "id": 3,
         "name": "Daniel Singh",
         "officeLocation":"Ottawa",
-        "role": "Senior Front-End Developer"
+        "role": "Coder"
 
 
 
@@ -30,7 +30,7 @@
         "id": 4,
         "name": "Singhe Bullar",
         "officeLocation":"Kingston",
-        "role": "Back-End Developer"
+        "role": "Debugger"
 
 
 
