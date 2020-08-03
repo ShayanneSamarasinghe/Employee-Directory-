@@ -10,9 +10,12 @@ function App() {
   const [tableManager, setList] = useState( { list: employees, filter: "", order: "name" } )
 
   function updateFilter(filter){
-    const filterList =  employees.filter( filterByName => employees.name==filterByName)
-    setList ({...tableManager,filter, list:filterList})
+    const filterList =  employees.filter( employee => employee.name.toLocaleLowerCase().indexOf(filter.toLocaleLowerCase())> -1)
+    setList ({...tableManager, filter, list:filterList})
   }
+
+
+
   function updateOrder (order){
     const newOrderForList = tableManager.list.sort(function(a, b){
       return a[order] - b[order]
