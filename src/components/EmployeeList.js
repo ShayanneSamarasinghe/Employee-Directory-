@@ -1,6 +1,7 @@
 import React from 'react'
+import TableRow from "./TableRow"
 
-function EmployeeList(){
+function EmployeeList(props){
     return(
         <table class="table">
         <thead>
@@ -12,31 +13,8 @@ function EmployeeList(){
           </tr>
         </thead>
         <tbody>
-            {props.employees.map(employee=>< TableRow ...employee /> )}
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark Jacob</td>
-            <td>Downtown TO</td>
-            <td>UI UX Junior Designer</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob Daniel</td>
-            <td>Ottawa</td>
-            <td>Front-End Developer</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Daniel Singh</td>
-            <td>Ottawa</td>
-            <td>Senior Front-End Developer</td>   
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Singhe Bullar</td>
-            <td>Kingston</td>
-            <td>Back-End Developer</td>   
-          </tr>
+            {props.employees.map(employee=>< TableRow {...employee} /> )}
+        
         </tbody>
       </table>
     )

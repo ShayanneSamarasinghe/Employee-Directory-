@@ -8,9 +8,9 @@ function FilterOrder (props){
         </label>
         <div class="col-sm-10">
           <select class="form-select form-select-lg mb-3">
-            <option selected>Name</option>
-            <option value="1">Office Location</option>
-            <option value="2">Role</option>
+            <option value="name">Name</option>
+            <option value="OfficeLocation">Office Location</option>
+            <option value="Role">Role</option>
           </select>
         </div>
       </div>
